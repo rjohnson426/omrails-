@@ -1,4 +1,5 @@
 class Pin < ActiveRecord::Base
   attr_accessible :description
 
-  Validates :description, :presence true
+  validates :description, presence: true
+end
